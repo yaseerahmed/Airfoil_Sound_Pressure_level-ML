@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airoil</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Airfoil Analysis</h1>
+    <div>
+        <span>
+            <p>Airfoil also spelled Aerofoil, shaped surface, such as an airplane wing, tail, or propeller blade, that produces lift and drag when moved through the air. An airfoil produces a lifting force that acts at right angles to the airstream and a dragging force that acts in the same direction as the airstream.</p>
+            <img src="static\Airfoil.PNG" alt="Airfoil Image" style="float: right; margin-right: 15px;">
+        </span>
+    </div>
+    <ul>
+        <li>The angle of attack (AOA) is the angle at which the chord of an aircraft's wing meets the relative wind</li>
+        <li>The chord length is the distance between the trailing edge and the point where the chord intersects the leading edge</li>
+        <li>Free stream velocity is the air far upstream of an aerodynamic body, that is, before the body has a chance to deflect, slow down or compress the air.</li>
+    </ul>
+    <p>Give the following input to calculate the level of sound pressure for an airfoil></p>
+    <form action="\predict" method="post">
+        <input type="text" name="Frequency" placeholder="Frequency" required="required"><span>In Hertz</span><br>
+        <input type="text" name="Angle of attack" placeholder="Angle of attack" required="required"><span>In Degrees</span><br>
+        <input type="text" name="Chord length" placeholder="Chord length" required="required"><span>In meteres</span><br>
+        <input type="text" name="Free Stream Velocity" placeholder="Free Stream Velocity" required="required"><span>In in metres/second</span><br>
+        <input type="text" name="Suction side displacement thickness" placeholder="Suction side displacement thickness" required="required"><span>In metres</span><br>
+        <button type="submit">predict</button>
+    </form>
+    {{prediction_text}}
+<p>.</p>
+<p>.</p>
+    <p>Please take sample data for reference</p>
+    <p>200	17.4	0.0254	55.5	0.0165706	109.951</p>
+<p>10000	0	0.3048	71.3	0.00266337	115.391</p>
+<p>2500	9.5	0.0254	39.6	0.00449821	131.234</p>
+<p>16000	0	0.3048	71.3	0.00266337	108.721</p>
+    </p>
+</body>
+</html>
